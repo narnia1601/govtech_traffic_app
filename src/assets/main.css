@@ -1,0 +1,62 @@
+body{
+  background-color: #03001C;
+}
+
+.components{
+  background-color: #301E67;
+}
+
+.run-animation{
+  animation: fadeInBottom 1s;
+}
+
+.button-component{
+  background-color: #5B8FB9;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.button-component:hover{
+  transform: translate(5px, -5px);
+  transition: 0.5s;
+  box-shadow: -10px 10px #1C82AD;
+  cursor: pointer;
+}
+
+.text{
+  color: #B6EADA;
+}
+
+img{
+  width: 100%;
+  border-radius: 10px;
+  animation: fadeInBottom 0.7s;
+}
+
+.location{
+  max-height: 300px;
+  overflow: scroll;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%), translateY(-50%);
+  filter: brightness(2);
+}
+
+.overlay-background{
+  opacity: 50%;
+  pointer-events: none;
+}
+
+@keyframes fadeInBottom {
+  from {
+      opacity: 0.5;
+      transform: translateY(100%);
+  }
+  to { opacity: 1 }
+}
